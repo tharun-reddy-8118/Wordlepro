@@ -1,0 +1,73 @@
+:root {
+  --green-bg: hsl(102, 31%, 38%);
+  --yellow-bg: hsl(49, 46%, 51%);
+  --grey-bg: hsl(0, 0%, 30%);
+}
+
+span {
+  margin: 10px;
+  padding: 12px;
+  display: block;
+  height: 42px;
+  width: 42px;
+  border: 2px solid black;
+  border-radius: 7px;
+  color: white;
+  font-weight: 700;
+  place-content: center;
+}
+.word-container {
+  display: flex;
+  justify-content: center;
+}
+.result {
+  margin: 1rem;
+  font-weight: 600;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0.5em;
+  gap: 0.25em;
+  margin-bottom: 2em;
+}
+
+.heading-letter {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 2em;
+  display: grid;
+  place-content: center;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px black;
+}
+
+.heading-letter:nth-child(even) {
+  position: relative;
+  top: 4px;
+}
+
+.heading-letter:nth-child(odd) {
+  position: relative;
+  bottom: 4px;
+}
+
+.heading-letter:nth-child(1),
+.heading-letter:nth-child(4),
+.heading-letter:nth-child(7) {
+  background-color: var(--green-bg);
+}
+
+.heading-letter:nth-child(2),
+.heading-letter:nth-child(5),
+.heading-letter:nth-child(8) {
+  background-color: var(--yellow-bg);
+}
+
+.heading-letter:nth-child(3),
+.heading-letter:nth-child(6),
+.heading-letter:nth-child(9) {
+  background-color: var(--grey-bg);
+}
